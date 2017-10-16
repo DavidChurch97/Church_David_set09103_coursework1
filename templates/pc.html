@@ -50,53 +50,41 @@
         <div class="col-lg-9">
         <br><h1>PC</h1><br>
           <div class="row">
-
-          <!--Cuphead card-->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100" style="max-height: 350px;">
-                <img class="card-img-top" src="{{ url_for('static', filename='img/cuphead.png') }}"/>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="http://store.steampowered.com/app/268910/Cuphead/">CupHead</a>
-                  </h4>
-                  <h5>£14.99</h5>
-                  <p class="card-text">Cuphead is a classic run and gun action game heavily focused on boss battles.</p>
-                </div>
-              </div>
-            </div>
-
-          <!--Black desert online card-->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100" style="max-height: 350px;">
-                <img class="card-img-top" src="{{ url_for('static', filename='img/bdo.png') }}"/>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="http://store.steampowered.com/app/582660/Black_Desert_Online/">Black desert online</a>
-                  </h4>
-                  <h5>£6.99</h5>
-                  <p class="card-text">Black Desert Online is a sandbox, living-world MMORPG.</p>
-                </div>
-              </div>
-            </div>
-
-            <!--Battlegrounds card-->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100" style="max-height: 350px;">
-                <img class="card-img-top" src="{{ url_for('static', filename='img/Battlegrounds.png') }}"/>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="http://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/">Battlegrounds</a>
-                  </h4>
-                  <h5>£26.99</h5>
-                  <p class="card-text">Battlegrounds is a last-man-standing shooter being developed with community feedback.</p>
-                </div>
-              </div>
-            </div>
+            <table class="table table-bordered table-striped table-hover" id="pc_games"> 
+              <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Store</th>
+              </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
           </div>
         </div>
-</body> 
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src={{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-  <script src={{ url_for('static', filename='js/bootstrap-table.js') }}"></script>
-</body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+</body> 
 </html>
+
+<script>
+  $(document).ready(function(){
+    $.getJSON('/static/js/pc.json', function(data){
+      var games_data = '';
+      $.each(data, function(key,value){
+        games_data += '<tr>';
+        games_data += '<td>'+value.id+'</td>';
+        games_data += '<td>'+value.name+'</td>';
+        games_data += '<td>'+value.price+'</td>';
+        games_data += '<td>'+value.store+'</td>';
+        games_data += '</tr>';
+      });
+      $('#pc_games').append(games_data);
+    });
+  });
+</script>
+

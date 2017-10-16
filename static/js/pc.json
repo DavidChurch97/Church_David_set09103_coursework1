@@ -1,0 +1,19 @@
+[
+{
+	"id": "1",
+	"name": "Cuphead",
+	"price": "14.99",
+	"store": "Steam"
+},
+{
+	"id": "2",
+	"name": "Black desert online",
+	"price": "6.99",
+	"store": "Steam"
+},
+{
+	"id": "3",
+	"name": "Battlegrounds",
+	"price": "26.99",
+	"store": "Steam"
+}]
