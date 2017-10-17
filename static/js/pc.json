@@ -1,19 +1,50 @@
 [
 {
-	"id": "1",
+	"id": 1,
 	"name": "Cuphead",
-	"price": "14.99",
+	"price": "£14.99",
 	"store": "Steam"
 },
 {
-	"id": "2",
+	"id": 2,
 	"name": "Black desert online",
-	"price": "6.99",
+	"price": "£06.99",
 	"store": "Steam"
 },
 {
-	"id": "3",
-	"name": "Battlegrounds",
-	"price": "26.99",
+	"id": 3,
+	"name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+	"price": "£26.99",
 	"store": "Steam"
-}]
+},
+{
+	"id": 4,
+	"name": "Divinity: Original Sin 2",
+	"price": "£39.99",
+	"store": "Steam"
+},
+{
+	"id": 5,
+	"name": "FIFA 18",
+	"price": "£54.99",
+	"store": "Origin"
+},
+{
+	"id": 6,
+	"name": "The Sims™ 4 Cats & Dogs",
+	"price": "£34.99",
+	"store": "Origin"
+},
+{
+	"id": 7,
+	"name": "STAR WARS™ Battlefront™ II",
+	"price": "£54.99",
+	"store": "Origin"
+},
+{
+	"id": 8,
+	"name": "Titanfall™ 2",
+	"price": "£24.99",
+	"store": "Origin"
+}
+]
