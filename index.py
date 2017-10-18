@@ -19,11 +19,15 @@ def Ps4():
 
 @app.route("/about")
 def About():
-	return render_template("ps4.html"), 200
+	return render_template("about.html"), 200
 
 @app.route("/contact")
 def Contact():
-	return render_template("ps4.html"), 200
+	return render_template("contact.html"), 200
+
+@app.errorhandler(404)
+def page_not_found(error):
+	return render_template("error.html"), 200
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
