@@ -4,6 +4,8 @@
   <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
   <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
 
+  <!-- GMAIL ACCOUNT:  gamesearchtesting@gmail.com / set09103-->
+
 </head>
 <body>
 
@@ -33,14 +35,14 @@
     </nav>
 
    <div class="container">
-   	<div class="row">
+    <div class="row">
 
         <div class="col-lg-3">
         <br>
         </br>
         
           <div class="list-group">
-            <a href="#" class="list-group-item">Featured</a>
+            <a href="/" class="list-group-item">Featured</a>
             <a href="/pc" class="list-group-item">PC</a>
             <a href="/xbox" class="list-group-item">Xbox</a>
             <a href="/ps4" class="list-group-item">PS4</a>
@@ -48,50 +50,31 @@
         </div>
 
         <div class="col-lg-9">
-        <br><h1>Featured</h1><br>
+        <br><h1>Contact Us</h1><br>
           <div class="row">
-
-          <!--Cuphead card-->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100" style="max-height: 360px;">
-                <img class="card-img-top" src="{{ url_for('static', filename='img/cuphead.png') }}"/>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="http://store.steampowered.com/app/268910/Cuphead/">CupHead</a>
-                  </h4>
-                  <h5>£14.99</h5>
-                  <p class="card-text">Cuphead is a classic run and gun action game heavily focused on boss battles.</p>
+              <div class="modal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <form class="form-horizontal">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Contact Us</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="contact-name" class="col-lg-2 control-lable=">Name:</label>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
-            </div>
-
-          <!--Black desert online card-->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100" style="max-height: 360px;">
-                <img class="card-img-top" src="{{ url_for('static', filename='img/bdo.png') }}"/>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="http://store.steampowered.com/app/582660/Black_Desert_Online/">Black desert online</a>
-                  </h4>
-                  <h5>£6.99</h5>
-                  <p class="card-text">Black Desert Online is a sandbox, living-world MMORPG.</p>
-                </div>
-              </div>
-            </div>
-
-            <!--Battlegrounds card-->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100" style="max-height: 360px;">
-                <img class="card-img-top" src="{{ url_for('static', filename='img/fifa18.png') }}"/>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="https://www.origin.com/gbr/en-us/store/fifa/fifa-18/standard-edition/">Fifa 18</a>
-                  </h4>
-                  <h5>£54.99</h5>
-                  <p class="card-text">FIFA 18 blurs the line between the virtual and real worlds, bringing to life the players, teams and atmospheres of The World’s Game.</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 </body> 
@@ -99,3 +82,4 @@
   <script src={{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 </body>
 </html>
+
