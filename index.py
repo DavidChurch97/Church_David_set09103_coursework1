@@ -1,3 +1,4 @@
+import ConfigParser
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
@@ -29,5 +30,21 @@ def Contact():
 def page_not_found(error):
 	return render_template("error.html"), 200
 
-if __name__ == "__main__":
-  app.run(host='0.0.0.0', debug=True)
+def init(app):
+    config = ConfigParser.ConfigParser()
+    try:
+        config_location = "etc/defaults.cfg"
+        config.read(config_location)
+        
+        app.config['DEBUG'] = config.get("config", "debug")
+        app.config['ip_address'] = config.get("config", "ip_address")
+        app.config['port'] = config.get("config", "port")
+        app.config['url'] = config.get("config", "url")
+    except:
+        print "Could not read configs from: ", config_location
+
+if __name__ == '__main__':
+    init(app)
+    app.run(
+        host=app.config['ip_address'], 
+        port=int(app.config['port']))
