@@ -1,0 +1,97 @@
+<html>
+<head>
+  <title>GameSearch</title>
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/home">GameSearch</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <div class="container">
+   	<div class="row">
+      <div class="col-lg-3">
+        <br>
+        </br>
+        
+          <div class="list-group">
+            <a href="/pc" class="list-group-item">PC</a>
+            <a href="/xbox" class="list-group-item">Xbox</a>
+            <a href="/ps4" class="list-group-item">PS4</a>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+        <br><h1>Hello, {{name}}</h1><br>
+          <p>Here you will find information on selected games which we have felt are the top 8. You can look at games that we have picked for PC, Xbox & PS4.</p>
+          <h2>Featured</h2>
+          <div class="row">
+          <!--Cuphead card-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100" style="max-height: 360px;">
+                <img class="card-img-top" src="{{ url_for('static', filename='img/cuphead.png') }}"/>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="http://store.steampowered.com/app/268910/Cuphead/">CupHead</a>
+                  </h4>
+                  <h5>£14.99</h5>
+                  <p class="card-text">Cuphead is a classic run and gun action game heavily focused on boss battles.</p>
+                </div>
+              </div>
+            </div>
+
+          <!--Black desert online card-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100" style="max-height: 360px;">
+                <img class="card-img-top" src="{{ url_for('static', filename='img/bdo.png') }}"/>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="http://store.steampowered.com/app/582660/Black_Desert_Online/">Black desert online</a>
+                  </h4>
+                  <h5>£6.99</h5>
+                  <p class="card-text">Black Desert Online is a sandbox, living-world MMORPG.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Battlegrounds card-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100" style="max-height: 360px;">
+                <img class="card-img-top" src="{{ url_for('static', filename='img/fifa18.png') }}"/>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="https://www.origin.com/gbr/en-us/store/fifa/fifa-18/standard-edition/">Fifa 18</a>
+                  </h4>
+                  <h5>£54.99</h5>
+                  <p class="card-text">FIFA 18 blurs the line between the virtual and real worlds, bringing to life the players, teams and atmospheres of The World’s Game.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</body> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src={{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

@@ -2,9 +2,21 @@ import ConfigParser
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
-@app.route("/")
-def Index():
-  return render_template("index.html"), 200
+@app.route("/", methods=['POST','GET'])
+def account():
+  if request.method == 'POST':
+    print request.form
+    name = request.form['name']
+    return render_template("home.html", name=request.form['name']), 200
+
+  else:
+    page = render_template("index.html"), 200
+
+    return page
+
+@app.route("/home")
+def Home():
+	return render_template("home.html"), 200
 
 @app.route("/pc")
 def Pc():
@@ -29,6 +41,10 @@ def Contact():
 @app.errorhandler(404)
 def page_not_found(error):
 	return render_template("error.html"), 200
+
+@app.errorhandler(405)
+def method_not_found(error):
+	return render_template("error405.html"), 200
 
 def init(app):
     config = ConfigParser.ConfigParser()
