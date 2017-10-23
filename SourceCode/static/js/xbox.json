@@ -1,0 +1,50 @@
+[
+{
+	"id": 1,
+	"name": "Life is Strange Complete Season (Episodes 1-5)",
+	"price": "£15.99 incl. VAT +",
+	"store": "Microsoft Store"
+},
+{
+	"id": 2,
+	"name": "Forza Motorsport 7 Standard Edition",
+	"price": "£49.99 incl. VAT +",
+	"store": "Microsoft Store"
+},
+{
+	"id": 3,
+	"name": "Minecraft",
+	"price": "£16.74 incl. VAT +",
+	"store": "Microsoft Store"
+},
+{
+	"id": 4,
+	"name": "UNO®",
+	"price": "£7.99 incl. VAT +",
+	"store": "Microsoft Store"
+},
+{
+	"id": 5,
+	"name": "Deus Ex: Mankind Divided Collector's Edition",
+	"price": "£39.99",
+	"store": "Game Store"
+},
+{
+	"id": 6,
+	"name": "Sleeping Dogs Definitive Edition - Limited Edition",
+	"price": "£16.55",
+	"store": "Game Store"
+},
+{
+	"id": 7,
+	"name": "Skyrim Special Edition",
+	"price": "£24.99",
+	"store": "Game Store"
+},
+{
+	"id": 8,
+	"name": "Dying Light: The Following - Enhanced Edition",
+	"price": "£25.77",
+	"store": "Game Store"
+}
+]

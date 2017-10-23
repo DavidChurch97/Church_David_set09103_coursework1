@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>GameSearch</title>
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='css/css.css') }}" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/home">GameSearch</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/home">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <div class="container">
+   	<div class="row">
+
+        <div class="col-lg-3">
+        <br>
+        </br>
+        
+          <div class="list-group">
+            <a href="/pc" class="list-group-item">PC</a>
+            <a href="/xbox" class="list-group-item">Xbox</a>
+            <a href="/ps4" class="list-group-item">PS4</a>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+        <br><h1>About Us</h1><br>
+          <div class="row">
+            <p>Here on GameSearch you can find a small slection of games that we feel are the best for gamers. You might not agree so please get in contact with us to suggest any titles that you would like to see be added.</p>
+            <p>On GameSearch you can find the information on how much a game costs and where you can buy it.</p>
+            <p>We hope you enjoy your stay here!</p>
+          </div>
+        <!-- gamesearchset09103 / 40284534-->
+          <button id="Submit" type="button" class="btn btn-dark"><a href="mailto:gamesearchset09103@gmail.com">Contact Us</a></button>
+        </div>
+</body> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src={{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

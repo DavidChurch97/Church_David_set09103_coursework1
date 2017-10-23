@@ -1,0 +1,50 @@
+[
+{
+	"id": 1,
+	"name": "South Park™: The Fractured but Whole™",
+	"price": "£54.99",
+	"store": "Playstation Store"
+},
+{
+	"id": 2,
+	"name": "WWE 2K18",
+	"price": "£54.99",
+	"store": "Playstation Store"
+},
+{
+	"id": 3,
+	"name": "Megaton Rainfall",
+	"price": "£12.99",
+	"store": "Playstation Store"
+},
+{
+	"id": 4,
+	"name": "ELEX",
+	"price": "£54.99",
+	"store": "Playstation Store"
+},
+{
+	"id": 5,
+	"name": "Grand Theft Auto V",
+	"price": "£29.99",
+	"store": "Game Store"
+},
+{
+	"id": 6,
+	"name": "Destiny 2",
+	"price": "£49.99",
+	"store": "Game Store"
+},
+{
+	"id": 7,
+	"name": "The Evil Within 2",
+	"price": "£44.99",
+	"store": "Game Store"
+},
+{
+	"id": 8,
+	"name": "Fallout 4",
+	"price": "£09.99",
+	"store": "Game Store"
+}
+]
